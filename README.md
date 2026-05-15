@@ -36,19 +36,19 @@ The model was trained on an aggregated Unified Road Dataset. The data was progra
 git clone [https://github.com/YourUsername/YOLOv3-Road-Anomaly-Detection.git](https://github.com/YourUsername/YOLOv3-Road-Anomaly-Detection.git)
 cd YOLOv3-Road-Anomaly-Detection
 pip install -r requirements.txt
-
+```
 
 **2. Download the Pre-trained Weights:**
 Because the PyTorch weight files exceed GitHub's standard file limits, they are hosted in the Releases section.
 Download the best_0.001.pt weight file from the Releases tab of this repository.
 Place the downloaded file inside the inference/ folder.
 
-3. Launch the GUI:
+**3. Launch the GUI:**
 
-Bash
+```Bash
 cd inference
 python inference_app.py
-
+```
 
 **☁️ Cloud Training Environment**
 Due to the computational intensity of the Darknet-53 backbone, local hardware was bypassed. The entire experimental pipeline, including the dataset augmentation (Mosaic, MixUp, CutMix) and hyperparameter sweeps, was executed utilizing dual NVIDIA Tesla T4 GPUs on Kaggle.
@@ -59,7 +59,7 @@ The full training pipeline and evaluation steps can be reproduced using the .ipy
 
 *02_Metrics_and_Evaluation.ipynb
 
-👥 Project Team
+**👥 Project Team**
 This system was engineered as part of the MCE 415 (Mechatronics Engineering) curriculum at the Federal University of Technology (FUT) Minna.
 
 Project Manager & Lead Engineer: Eje Obed Honour
